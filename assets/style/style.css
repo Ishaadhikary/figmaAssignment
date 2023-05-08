@@ -1,48 +1,148 @@
 /* Overall css */
-body{
+*{
     margin: 0 auto;
-    background: #F3F7FF;
-    max-width: 1200px;
+    padding: 0;
+    box-sizing: border-box;    
+}
+
+body{
+    background-color: #F3F7FF;
     font-family: 'M PLUS Rounded 1c', sans-serif;
     color:#043CAA;
+    font-size: normal;
 }
 
 a{
     text-decoration: none;
-    cursor: pointer;
-    color:inherit
+    color:inherit;
 }
 
-/* Start of Header Container Css */
-header{
-    display: flex;
-    justify-content: center;
-    position: absolute;
+.header-wrapper{
+    height: 680px;
+    background-repeat: no-repeat;
+    background-size: cover;
     width: 100%;
-    height: 679px;
-    left: 0px;
-    top: 0px;
-    background-size:cover;
-    background-image:url(../images/headercover.svg);
-    color:white;
+    background-image: url('/assets/images/headercover.svg');
+    padding-top: 35px;
+
 }
 
 .container{
-    width: 1200px;
-    margin: 0 auto;
+    max-width:1200px;
+    margin:0 auto;
+    
 }
 
+.nav-container{
+    display: flex;
+    flex-direction: row;
+    justify-content:flex-start;
+    align-items: center;
+}
+
+.logo{
+    margin: 0;
+}
+
+.nav-bar{
+    background: rgb(255, 123, 0);
+    margin: auto;
+    align-self: center;
+}
+.nav-bar ul{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+li{
+    padding-right: 48px;
+}
+
+.login-button{
+    width: 117px;
+    height: 42px;
+    background: #1BC768;
+    border-radius: 50px;
+    border: none;
+    font-size: 16px;
+    color: white; 
+}
+
+.login-button:hover{
+    width: 117px;
+    height: 42px;
+    background: #1BC768;
+    border-radius: 50px;
+    border: none;
+    font-size: 16px;
+    color: white; 
+    cursor: pointer;
+    box-shadow:7px 7px 13px rgba(64, 193, 4, 0.25);
+
+}
+
+.hamburger-menu{
+    display: none;
+    background-image: url(/assets/images/hamburgerMenu.svg);
+}
+
+@media screen and (max-width:576px){
+    .header-wrapper{
+        height: 380px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        background-image: url('/assets/images/headercover.svg');
+        padding-top: 1%;
+    
+    }
+    .container{
+        margin: 0;
+    }
+
+    .nav-container{
+        margin: 0.5%;
+        padding:0;
+        justify-content: space-evenly;
+
+    }
+
+    .nav-bar{
+        display:  none;   
+    }
+
+    .hamburger-menu{
+        display: inline;
+        order:-1;
+        margin: 0%;
+    }
+
+    .logo{
+        margin: auto;
+        order:0;
+    }
+    .login-button{
+        align-self: flex-end;
+        order:1;
+    }
+
+    
+
+}
+
+
+
+/*
 .nav-container{
     display:flex;
     align-items: flex-start;
     flex-direction: row;
     justify-content: center;
-
-
 }
 
 .logo{
-    position: absolute;
     width: 111.93px;
     height: 22.46px;
     left: 105.73px;
@@ -57,7 +157,6 @@ header{
 
 ul{
     display: flex;
-    position: absolute;
     width: 560px;
     height: 22px;
     left: 482px;
@@ -82,7 +181,6 @@ ul li{
     align-items: center;
     padding: 10px 38px;
     gap: 10px;
-    position: absolute;
     width: 117px;
     height: 42px;
     left: 1219px;
@@ -95,7 +193,6 @@ ul li{
 }
 
 .text-header-items h1{
-    position: absolute;
     width: 504px;
     height: 50px;
     left: 104px;
@@ -105,7 +202,6 @@ ul li{
 }
 
 .text-header-items p{
-    position: absolute;
     width: 504px;
     height: 50px;
     left: 104px;
@@ -118,7 +214,6 @@ ul li{
     align-items: center;
     padding: 0px;
     gap: 21px;
-    position: absolute;
     width: 476px;
     height: 45px;
     left: 104px;
@@ -187,7 +282,6 @@ button.drug-button:hover{
 
 .search-bar{
     display:flex;
-    position: absolute;
     width: 488px;
     height: 48px;
     left: 104px;
@@ -203,7 +297,6 @@ button.drug-button:hover{
 }
 
 .find-drugs-button{
-    position: absolute;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -233,7 +326,7 @@ input{
 
 .doctor{
     display: flex;
-    position: absolute;
+      
     width: 483px;
     height: 500px;
     left: 885px;
@@ -241,9 +334,6 @@ input{
     background-image: url(../images/doctor.svg)
 }
 
-/* End Of Header Css */
-
-/* Website Content Css */
 
 .affiliation h2, .key-benifits h2{
     color:#043CAA;
@@ -252,7 +342,7 @@ input{
 }
 
 .affiliation{
-    position: absolute;
+      
     display:flex;
     flex-direction: column;
     width: 564px;
@@ -304,7 +394,7 @@ hr{
 .key-benifits{
     display: flex;
     flex-direction: column;
-    position: absolute;
+      
     width: 1018.05px;
     height: 1654.7px;
     left: 211px;
@@ -385,14 +475,12 @@ hr{
     top: 2819px;
     display: flex;
     flex-direction: column;
-    position: absolute;
+      
     align-items: center;
 }
-/* End of Main-Website Container Css  */
 
-/* Medicine Image Container Css */
 .full-container img{
-    position: absolute;
+      
     align-self: flex-start;
     width: 648px;
     height: 466px;
@@ -404,7 +492,7 @@ hr{
     flex-direction: column;
     justify-content: center;
     align-self: flex-end;
-    position: absolute;
+      
     width: 382px;
     height: 304px;
     flex:1;
@@ -456,7 +544,7 @@ hr{
     display: flex;
     flex-direction: row;
     margin-top: 300px;
-    position: absolute;
+      
     width: 200px;
     padding-left: 10px;
     flex-wrap: nowrap;
@@ -485,14 +573,11 @@ hr{
     color: black;
     box-shadow:7px 7px 13px rgba(64, 193, 4, 0.25);
 }
-/* End of Medicine Image Container Css */
-
-/* Footer Css */
 
 footer{
     display: flex;
     justify-content: center;
-    position: absolute;
+      
     flex-direction: column;
     width: 100%;
     height: 679px;
@@ -506,7 +591,7 @@ footer{
 
 .subscription-container{
     display: flex;
-    position: absolute;
+      
     width: 1036px;
     height: 456px;
     left: 0px;
@@ -516,7 +601,7 @@ footer{
 .subscription-text{
     display: flex;
     flex-direction: column;
-    position: absolute;
+      
     width: 409px;
     height: 101px;
     left: 173px;
@@ -527,7 +612,7 @@ footer{
 
 .subscription-text h2{
     align-self: flex-start;
-    position: absolute;
+      
     width: 332px;
     height: 33px;
     left: 0px;
@@ -539,7 +624,7 @@ footer{
 }
 
 .subscription-text p{
-    position: absolute;
+      
     width: 404px;
     height: 50px;
     left: 0px;
@@ -553,7 +638,7 @@ footer{
 .subscription{
     display: flex;
     flex-direction: column;
-    position: absolute;
+      
     width: 490px;
     height: 88px;
     left: 704px; 
@@ -562,7 +647,7 @@ footer{
 
 .email-input{
     display:flex;
-    position: absolute;
+      
     width: 482px;
     height: 52px;
     left: 0px;
@@ -579,7 +664,7 @@ footer{
 }
 
 .subscribe-button{
-    position: absolute;
+      
     display: flex;
     justify-content: center;
     align-items: center;
@@ -598,7 +683,7 @@ footer{
 .subscribe-button-image{
     display: flex;
     justify-content: center;
-    position: absolute;
+      
     width: 24px;
     height: 24px;
     left: 117px;
@@ -615,7 +700,7 @@ footer{
 .footer-info{
     display: flex;
     flex-direction: row;   
-    position: absolute;
+      
     width: 976px;
     height: 136px;
     left: 176px;
@@ -623,7 +708,7 @@ footer{
 }
 
 .dExpress{
-    position: absolute;
+      
     width: 211px;
     height: 33px;
     left: 0px;
@@ -645,7 +730,7 @@ footer{
 }
 
 .quick-links{
-    position: absolute;
+      
     width: 112px;
     height: 143px;
     left: 420px;
@@ -668,7 +753,7 @@ footer{
 }
 
 .services{
-    position: absolute;
+      
     width: 200px;
     height: 142px;
     left: 630px;
@@ -676,22 +761,20 @@ footer{
 }
 
 .social-media{
-    position: absolute;
+      
     width: 127px;
     height: 142px; 
     left:860px;
     top: -20px;
 }
 
-.copy-right{
-    position: absolute;
+.copy-right{   
     width: 351px;
     height: 22px;
-    left: 567px;
-    bottom: 33px;
+    text-align: centerss;
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
     line-height: 22px;
-}
+} */
 

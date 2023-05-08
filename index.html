@@ -6,18 +6,36 @@
     <title>Pharmacy Landing Page</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel="icon" type="image/png" href="sh/images/pharmacy.png" sizes="16x16">
-    <link rel="stylesheet" href="sh/style/normalize.css" class="rel">
-    <link rel='stylesheet' type='text/css' media='screen' href='sh/style/style.css'>
+    <link rel="stylesheet" href="assets/style/normalize.css" class="rel">
+    <link rel='stylesheet' type='text/css' media='screen' href='assets/style/style.css'>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@100;300;400;500;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <!-- Navigation and banner -->
-    <header>
+    <header class="header-wrapper">
         <div class="container">
-        <!-- Nav Flex -->
+            <div class="nav-container">
+                <div class="logo">
+                    <img src="assets/images/Logo.svg" alt="Logo">
+                </div>
+                <div class="nav-bar">
+                    <ul>
+                        <li>Refill Prescription</li>
+                        <li>Buy Medicine</li>
+                        <li>Contact a pharmacist</li>
+                    </ul>
+                </div>
+                <div class="hamburger-menu"> <img src="/assets/images/hamburgerMenu.svg"></div>
+                <button type="button" class = "login-button"><a href = "sh/style/comingSoon.css">Login</a></button>
+            </div>
+        </div>
+    </header>
+        
+    <!-- <div class="container">
+        
             <div class="nav-container">
                 <div class="logo">
                     <img src="sh/images/Logo.svg">
@@ -48,8 +66,7 @@
                         <div class="doctor"></div>        
                 </div>
             </div>
-    </header> 
-        <!-- Website content -->
+     
         <div class="affiliation">
             <h2>
                 Our Affiliation <hr>
@@ -65,7 +82,6 @@
         <div class="key-benifits">
             <h2>Key Benifits <hr></h2>
             <div class="benifit">
-                <!-- benifit 1 -->
                 <div class="text">
                     <h3>All your Medicine needs in one place</h3>
 
@@ -76,7 +92,6 @@
                 </div>
                 <img src="sh/images/onePlace.svg">
             </div>
-            <!-- benifit 2 -->
             <div class="benifit">
                 <img src="sh/images/onePlace.svg">
                 <div class="text">
@@ -88,7 +103,6 @@
                     <button type="button" class="prescription-button"><a href="sh/html/commingSoon.html">Get Prescription >> </a></button>
                 </div>
             </div>
-            <!-- benifit 3 -->
             <div class="benifit">
                 <div class="text">
                     <h3>All your Medicine needs in one place</h3>
@@ -101,7 +115,6 @@
                 <img src="sh/images/onePlace.svg">
             </div>
         </div>
-    <!-- Medicine Information -->
     <div class="full-container">
         <img src="sh/images/medicine.svg" alt="medicine">
         <div class="full-text">
@@ -118,7 +131,6 @@
         </div>  
     </div>
     
-    <!-- Company information footer -->
     <footer>
         <div class="subscription-container">
             <div class="subscription-text">
@@ -182,6 +194,6 @@
                 Designed by sophisticateddev. copyright&copy;
             </p>
         </div>
-    </footer>
+    </footer> -->
 </body>
 </html>
