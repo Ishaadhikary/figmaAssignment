@@ -339,7 +339,7 @@ hr{
     line-height: 25px;
     padding-bottom: 20px;
     list-style-type: none;
-    background-image: url('/sh/images/libullet.svg');
+    background-image: url('../images/libullet.svg');
     background-size: contain;
     background-repeat: no-repeat;
     padding-left: 50px; 
