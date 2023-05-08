@@ -1,0 +1,38 @@
+body{
+    display: block;
+    text-align: center;
+    height: 100%;
+    margin: 0 auto;
+    background: #F3F7FF;
+    max-width: 1200px;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    color:#043CAA;
+}
+h1{
+    margin-top:15%;
+    text-decoration: none;
+    font-weight: 10px;
+    font-size: 100px;
+}
+
+/* Button for View Code */
+.resetButton {
+    background-color: #1BC768; 
+    border: none;  
+    padding: 20px 35px; 
+    text-align: center;
+    display: inline-block;
+    font-size: 24px; 
+    margin: 0;
+    box-shadow: 0px 4px 15px 10px rgba(0, 0, 0, 0.07);
+    border-radius: 50px;
+  }
+
+a{
+    text-decoration: none;
+    color: #F3F7FF;
+}
+
+p{
+    font-size: 24px;
+}

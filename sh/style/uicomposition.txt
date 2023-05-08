@@ -1,0 +1,29 @@
+background color:
+Primary color: Main color
+Secondary color: #1BC768
+
+Heading:
+<h1>
+Font family: Avenir
+font-size: 36
+
+<h2>:
+Font family: Avenir
+font-size: 24
+
+Header:
+Font family: Avenir
+font-size: 48
+
+Footer
+Left side:
+<p>:
+Font family: Avenir
+font-size: 18
+heading:
+font-size: 24
+
+Right side:
+heading:
+font-size 18
+p: 16
